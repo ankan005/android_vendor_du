@@ -59,7 +59,126 @@ PRODUCT_COPY_FILES += \
     vendor/extras/build/tools/backuptool.functions:install/bin/backuptool.functions \
     vendor/extras/build/tools/50-du.sh:system/addon.d/50-du.sh
 
-# Weather client
+# Optional packages
+PRODUCT_PACKAGES += \
+    Basic \
+    LiveWallpapersPicker \
+    PhaseBeam
+
+# Include explicitly to work around GMS issues
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full \
+    librsjni
+
+# AudioFX
+PRODUCT_PACKAGES += \
+    AudioFX
+
+# Extra Optional packages
+PRODUCT_PACKAGES += \
+    Calculator \
+    LatinIME \
+    BluetoothExt \
+    OmniJaws \
+    OmniStyle
+
+# Xtended Packages
+PRODUCT_PACKAGES += \
+    LeanLauncher
+
+# Omni Poor Man Themes
+PRODUCT_PACKAGES += \
+    DocumentsUITheme \
+    DialerTheme \
+    TelecommTheme
+
+PRODUCT_PACKAGES += \
+    NotificationsXtended \
+    NotificationsBlack \
+    NotificationsDark \
+    NotificationsLight \
+    NotificationsPrimary
+
+PRODUCT_PACKAGES += \
+    AccentSluttyPink \
+    AccentPixel \
+    AccentGoldenShower \
+    AccentDeepOrange \
+    AccentOmni \
+    AccentWhite \
+    AccentTeal \
+    AccentFromHell \
+    AccentBlueMonday \
+    AccentSmokingGreen \
+    AccentDeadRed \
+    AccentRottenOrange \
+    AccentDeepPurple
+
+PRODUCT_PACKAGES += \
+    PrimaryAlmostBlack \
+    PrimaryBlack \
+    PrimaryXtended \
+    PrimaryOmni \
+    PrimaryWhite \
+    PrimaryColdWhite \
+    PrimaryWarmWhite \
+    PrimaryDarkBlue
+
+# CustomDoze
+PRODUCT_PACKAGES += \
+    CustomDoze
+
+# DU Utils Library
+#PRODUCT_BOOT_JARS += \
+    org.dirtyunicorns.utils
+
+# DU Utils Library
+#PRODUCT_PACKAGES += \
+    org.dirtyunicorns.utils
+
+# Fonts
+#PRODUCT_PACKAGES += \
+    DU-Fonts
+
+# Extra tools
+PRODUCT_PACKAGES += \
+    openvpn \
+    e2fsck \
+    mke2fs \
+    tune2fs \
+    fsck.exfat \
+    mkfs.exfat \
+    ntfsfix \
+    ntfs-3g \
+    mkfs.ntfs \
+    fsck.ntfs \
+    mount.ntfs \
+    mkfs.f2fs \
+    fsck.f2fs \
+    fibmap.f2fs \
+    libsepol \
+    nano \
+    htop \
+    gdbserver \
+    micro_bench \
+    oprofiled \
+    sqlite3 \
+    strace \
+    pigz \
+    7z \
+    lib7z \
+    bash \
+    bzip2 \
+    curl \
+    powertop \
+    unrar \
+    unzip \
+    vim \
+    wget \
+    zip
+
+# Xtended Stuff - Copy to System fonts
+>>>>>>> 0eed3ec... Add Xtended Theme [1/2]
 PRODUCT_COPY_FILES += \
     vendor/du/etc/permissions/org.pixelexperience.weather.client.xml:system/etc/permissions/org.pixelexperience.weather.client.xml \
     vendor/du/etc/default-permissions/org.pixelexperience.weather.client.xml:system/etc/default-permissions/org.pixelexperience.weather.client.xml
