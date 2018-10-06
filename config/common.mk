@@ -90,14 +90,13 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     DocumentsUITheme \
     DialerTheme \
-    TelecommTheme
+    TelecommTheme \
 
 PRODUCT_PACKAGES += \
     NotificationsXtended \
     NotificationsBlack \
-    NotificationsDark \
     NotificationsLight \
-    NotificationsPrimary
+    NotificationsPrimary \
 
 PRODUCT_PACKAGES += \
     AccentSluttyPink \
