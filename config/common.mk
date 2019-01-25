@@ -75,3 +75,7 @@ include vendor/themes/common.mk
 
 # Overlays
 PRODUCT_PACKAGE_OVERLAYS += vendor/du/overlay/common
+
+#Musicfx
+PRODUCT_PACKAGES += \
+    Recorder \
